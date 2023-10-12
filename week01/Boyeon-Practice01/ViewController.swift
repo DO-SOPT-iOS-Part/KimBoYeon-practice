@@ -19,15 +19,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        loginButton.backgroundColor = .systemPink
-
+        self.buttonElement()
+    
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    private func buttonElement() {
+        guard let loginButton else {return}
         
         loginButton.layer.cornerRadius = 12
         loginButton.layer.masksToBounds = true
+        loginButton.tintColor = .white
+        loginButton.backgroundColor = .systemPink
+
     }
 
     @IBAction func colorChanged(_ sender: UISwitch) {

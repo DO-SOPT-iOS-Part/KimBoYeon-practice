@@ -38,14 +38,14 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="pwTextFieldDidEditing:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="DFV-MW-eVb"/>
+                                    <action selector="pwTextFieldEditingChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Tn5-yR-8cE"/>
+                                    <action selector="pwTextFieldEditingDidEnd:" destination="BYZ-38-t0r" eventType="valueChanged" id="3Ag-zf-qSW"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhT-NY-w5v">
                                 <rect key="frame" x="150" y="441" width="93" height="35"/>
-                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="로그인" cornerStyle="capsule" titleAlignment="center"/>
+                                <buttonConfiguration key="configuration" style="plain" title="로그인" titleAlignment="center"/>
                                 <connections>
                                     <action selector="loginButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ndK-aw-5ad"/>
                                 </connections>
@@ -179,9 +179,6 @@
         </systemColor>
         <systemColor name="systemMintColor">
             <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
